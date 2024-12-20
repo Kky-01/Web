@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { View, Text, Image, TouchableOpacity, Button, StyleSheet } from "react-native"; // StyleSheet로 스타일 정의
-import styles from "./style5051"; // 스타일 임포트
+import { View, Text, Image, TouchableOpacity, Button, StyleSheet } from "react-native"; 
+import styles from "./style5051"; 
 
 const Page51 = ({ navigation }) => {
   const [isCorrect, setIsCorrect] = useState(false);
-  const [touches, setTouches] = useState(Array(10).fill(0)); // 터치 상태 배열
+  const [touches, setTouches] = useState(Array(10).fill(0)); 
 
   const Pass = () => {
-    const correctAnswers = [1, 0, 1, 1, 1, 1, 1, 0, 0, 0]; // 정답 배열
+    const correctAnswers = [1, 0, 1, 1, 1, 1, 1, 0, 0, 0]; 
     const score = touches.reduce((acc, touch, index) => {
       return acc + (touch === correctAnswers[index] ? 1 : 0);
     }, 0);
@@ -17,7 +17,7 @@ const Page51 = ({ navigation }) => {
   const handleTouch = (index) => {
     setTouches((prevTouches) => {
       const newTouches = [...prevTouches];
-      newTouches[index] = (newTouches[index] + 1) % 2; // 0 또는 1로 토글
+      newTouches[index] = (newTouches[index] + 1) % 2; 
       return newTouches;
     });
   };
