@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { View, TextInput, Button, Text, Image } from "react-native"; // React Native 컴포넌트 임포트
+import { View, TextInput, Button, Text, Image } from "react-native"; 
 import styls from "./style5051";
 
-const Page50 = ({ navigation }) => { // navigation prop 추가
+const Page50 = ({ navigation }) => {
   const [inputfood1, setInputFood1] = useState("");
   const [inputfood2, setInputFood2] = useState("");
   const [inputfood3, setInputFood3] = useState("");
@@ -19,9 +19,9 @@ const Page50 = ({ navigation }) => { // navigation prop 추가
     let D6 = inputfood6 === "시금치 된장국" ? 1 : 0;
 
     if (D1 + D2 + D3 + D4 + D5 + D6 === 6) {
-      alert("정답!"); // 정답 확인을 alert로 표시
+      alert("정답!"); 
     } else {
-      alert("틀렸습니다. 다시 시도해 보세요."); // 오답 시 메시지
+      alert("틀렸습니다. 다시 시도해 보세요."); 
     }
   };
 
