@@ -14,7 +14,7 @@ const TopContents = styled.View`
   margin-bottom: 10;
 `;
 const BottomContents = styled.View`
-  flex: 0.4;
+  flex: 0.43;
   margin-bottom: 5;
 `;
 
