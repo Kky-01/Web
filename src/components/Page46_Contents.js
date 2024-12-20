@@ -26,7 +26,7 @@ const foods = [
   },
 ];
 
-const Page46_Contents = ({ navigation }) => { // navigation prop 추가
+const Page46_Contents = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.contentsHeader}>▶ 당뇨예방밥상 기억하기</Text>
@@ -47,7 +47,7 @@ const Page46_Contents = ({ navigation }) => { // navigation prop 추가
             style={styles.imgBackground}
             resizeMode="stretch"
           >
-            {/* 음식 목록 */}
+          
             <View style={styles.gridContainer}>
               {foods.map((item) => (
                 <View key={item.id} style={styles.foodCard}>
