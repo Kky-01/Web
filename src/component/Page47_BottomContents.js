@@ -3,12 +3,12 @@ import { View, Text, Image, TextInput } from "react-native";
 import { StyleSheet } from "react-native";
 
 const foodImage = [
-  require("../../assets/images/food1.jpg"),
-  require("../../assets/images/food2.jpg"),
-  require("../../assets/images/food3.jpg"),
-  require("../../assets/images/food4.jpg"),
-  require("../../assets/images/food5.jpg"),
-  require("../../assets/images/food6.jpg"),
+  require("../../assets/images/image/food1.jpg"),
+  require("../../assets/images/image/food2.jpg"),
+  require("../../assets/images/image/food3.jpg"),
+  require("../../assets/images/image/food4.jpg"),
+  require("../../assets/images/image/food5.jpg"),
+  require("../../assets/images/image/food6.jpg"),
 ];
 
 const Page47_BottomContents = () => {
