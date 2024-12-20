@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/native"; // .native로 수정
+import styled from "styled-components/native"; 
 import { View, Button } from "react-native";
 import Page46_Header from "./Page46_Header";
 import Page46_Contents from "./Page46_Contents";
@@ -28,13 +28,13 @@ const Page46 = ({ navigation }) => {
   return (
     <Container>
       <Header>
-        <Page46_Header navigation={navigation} /> {/* navigation prop 전달 */}
+        <Page46_Header navigation={navigation} /> 
       </Header>
       <Contents>
-        <Page46_Contents navigation={navigation} /> {/* navigation prop 전달 */}
+        <Page46_Contents navigation={navigation} />
       </Contents>
       <Footer>
-        <Button title="다음 페이지" onPress={() => navigation.navigate('Page47')} /> {/* 버튼 추가 */}
+        <Button title="다음 페이지" onPress={() => navigation.navigate('Page47')} /> 
       </Footer>
     </Container>
   );
