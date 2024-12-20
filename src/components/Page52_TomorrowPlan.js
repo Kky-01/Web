@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Image, TextInput } from "react-native";
 const TomorrowPlan = ({ plan, setPlan, Brainhealth, setBrainhealth }) => {
   return (
     <View style={styles.container}>
-      {/* 내일 계획 */}
+      {}
       <View style={styles.row}>
         <Text style={styles.label}>내일 계획</Text>
         <TextInput
@@ -16,9 +16,9 @@ const TomorrowPlan = ({ plan, setPlan, Brainhealth, setBrainhealth }) => {
         />
       </View>
 
-      {/* 뇌 건강을 위한 생활습관 */}
+      {}
       <View style={styles.healthContainer}>
-        {/* 왼쪽: 체크 아이콘 + 제목 */}
+        {}
         <View style={styles.titleContainer}>
           <View>
           <Text style={styles.label}>뇌 건강을</Text>
@@ -27,7 +27,7 @@ const TomorrowPlan = ({ plan, setPlan, Brainhealth, setBrainhealth }) => {
           </View>
         </View>
 
-        {/* 오른쪽: 설명 부분 */}
+        {}
         <View style={styles.contentContainer}>
           <View style={styles.checkTextContainer}>
             <Image
@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   label: {
-    fontSize: 14, // 평범한 글씨
-    color: "#000", // 검정색
+    fontSize: 14, 
+    color: "#000", 
   },
   input: {
     flex: 2,
