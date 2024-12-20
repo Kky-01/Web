@@ -11,7 +11,7 @@ const foodImage = [
   require("../../assets/images/food6.jpg"),
 ];
 
-const Page47_BottomContents = ({ navigation }) => { // navigation prop 추가
+const Page47_BottomContents = ({ navigation }) => { 
   const [answer2, setAnswer2] = useState("");
   const [answer3, setAnswer3] = useState("");
   const [answer4, setAnswer4] = useState("");
@@ -20,7 +20,7 @@ const Page47_BottomContents = ({ navigation }) => { // navigation prop 추가
 
   return (
     <View style={styles.gridContainer}>
-      {/* 1행 */}
+     
       <View style={styles.row}>
         <View style={styles.column}>
           <Image source={foodImage[0]} style={styles.foodImage} />
@@ -57,7 +57,7 @@ const Page47_BottomContents = ({ navigation }) => { // navigation prop 추가
         </View>
       </View>
 
-      {/* 2행 */}
+   
       <View style={styles.row}>
         <View style={styles.column}>
           <Image source={foodImage[4]} style={styles.foodImage} />
@@ -97,7 +97,7 @@ const Page47_BottomContents = ({ navigation }) => { // navigation prop 추가
         </View>
       </View>
 
-      {/* 버튼 추가 */}
+     
       <View style={styles.buttonContainer}>      </View>
     </View>
   );
