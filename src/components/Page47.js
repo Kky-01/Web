@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components/native"; // .native로 수정
-import { Text, StyleSheet, Button, View } from "react-native"; // Button과 View 임포트 추가
+import styled from "styled-components/native";
+import { Text, StyleSheet, Button, View } from "react-native"; 
 import Page47_TopContents from "./Page47_TopContents";
 import Page47_BottomContents from "./Page47_BottomContents";
 
@@ -21,7 +21,7 @@ const BottomContents = styled.View`
 `;
 
 const Page47 = ({ navigation }) => {
-  // navigation prop 추가
+
   return (
     <Container>
       <Text style={styles.contentsHeader}>▶ 당뇨예방밥상 기억하기</Text>
@@ -30,7 +30,7 @@ const Page47 = ({ navigation }) => {
       </TopContents>
       <BottomContents>
         <Page47_BottomContents navigation={navigation} />{" "}
-        {/* navigation prop 전달 */}
+  
       </BottomContents>
       <Text style={styles.rememberText}>
         ▶
@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
   },
   rememberText: { marginBottom: 80 },
   nextPageContainer: {
-    marginTop: 20, // "다음 페이지"와의 간격 조정
-    alignItems: "center", // 가운데 정렬
+    marginTop: 20, 
+    alignItems: "center", 
   },
 });
 
