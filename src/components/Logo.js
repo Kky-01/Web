@@ -4,7 +4,7 @@ import { Image, StyleSheet } from 'react-native';
 const Logo = () => {
   return (
     <Image 
-      source={require('../../assets/images/Diabetes.png')} // 상대 경로 확인
+      source={require('../../assets/images/Diabetes.png')} 
       style={styles.logo}
     />
   );
