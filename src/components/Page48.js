@@ -120,15 +120,15 @@ const Page48 = ({ navigation }) => {
             <Text style={styles.inputLabel}>하루 필요열량 (칼로리):</Text>
             <TextInput
               style={styles.input}
-              value={userDailyCalorieAnswer} // 필요한 경우 추가
-              onChangeText={setUserDailyCalorieAnswer} // 필요한 경우 추가
+              value={userDailyCalorieAnswer} 
+              onChangeText={setUserDailyCalorieAnswer} 
               placeholder="칼로리"
               keyboardType="numeric"
             />
           </View>
         </View>
 
-        {/* 다음 페이지로 넘어가는 버튼 추가 */}
+       
         <Button title="다음 페이지" onPress={() => navigation.navigate('Page49')} />
       </ScrollView>
     </KeyboardAvoidingView>
